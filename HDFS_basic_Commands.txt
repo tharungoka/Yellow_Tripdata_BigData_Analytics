@@ -1,0 +1,14 @@
+After uploading the file, open cloudxlab and navigate to "mylab"
+You can see "Web Console", open web console
+Provide credentials -- password will not be seen, please dont paste password multiple times.
+Now you will have an access to HDFS and HIVE shell.
+
+---Get Familiar with Hadoop Commands for HDFS
+
+-- to list the hadoop file system ==> hadoop fs -ls
+
+-- to create any folder under HDFS ==> hadoop fs mkdir gtk678 // as i have given the same folder name in my handson.
+
+-- to copy the data from local file system to the HDFS ==> hadoop fs -put <local file path> <hdfs directory path>
+
+-- to open or display any data present in file ===> hadoop fs -cat <filepath>
