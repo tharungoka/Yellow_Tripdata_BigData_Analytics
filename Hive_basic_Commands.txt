@@ -1,0 +1,21 @@
+Before going to analyse our data we need to go to the folder in which the file has reside.
+In my case it was in "gtk678"
+
+-- cd gtk678
+-- ls
+
+You can observe the file under gtk678.
+
+Now on same folder type a command "hive" 
+
+You can observe a command shell there.
+
+Basic commands in Hive -- mostly same as SQL
+	
+-- creating database ==> CREATE DATABASE <name>;
+-- creating table ==> CREATE TABLE <name> ( <attribute list> );
+-- Showing databases ==> SHOW databases;
+-- Showing tables ==> SHOW tables;
+-- Dropping database ==> DROP database <name>;
+-- Dropping table ==> DROP table <name>;
+-- select query ==> SELECT * FROM <table name>;
