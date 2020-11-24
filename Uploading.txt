@@ -1,0 +1,6 @@
+After login into cloudxlab you can see Lab credentials and available services like "Web Console", "Jupyter", "Ambari"
+Open "Jupyter" and provide credentials
+Under "Jupyter" create a folder with any name, in my case i have created a folder- "gtk678"
+Under the created folder, upload a file that you want to analyse on big data (hadoop) platform.
+In my case i have uploded file "yellow_tripdata.csv" 
+Close your "Jupyter" session.
