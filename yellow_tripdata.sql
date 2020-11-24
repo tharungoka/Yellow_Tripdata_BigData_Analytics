@@ -75,3 +75,33 @@ SELECT payment_type,AVG(fare_amount) AS avg_fare, AVG(tip_amount) AS avg_tip, AV
 	--4----12.2222222222   0       0.5
 
 
+-- Creating an external table
+-- Before creating external table we need to have a folder in HDFS that contains data
+
+hadoop fs -mkdir data
+hadoop fs -put 'yellow_tripdata.csv' data
+
+-- Now we can create an external table using external key word
+CREATE external table yellow_tripdata_table_ext( vendor_id string,
+pickup_datetime string,
+dropoff_datetime string,
+passenger_count int,
+trip_distance DECIMAL(9,6),
+pickup_longitude DECIMAL(9,6),	
+pickup_latitude DECIMAL(9,6),
+rate_code int,
+store_and_fwd_flag string,
+dropoff_longitude DECIMAL(9,6),
+dropoff_latitude DECIMAL(9,6),
+payment_type string,
+fare_amount DECIMAL(9,6),
+extra DECIMAL(9,6),
+mta_tax DECIMAL(9,6),
+tip_amount DECIMAL(9,6),
+tolls_amount DECIMAL(9,6),
+total_amount DECIMAL(9,6),
+trip_time_in_secs int)
+row format delimited
+fields terminated by ','
+location 'user/tharunkumargoka6783882/data'
+tblproperties('skip.header.line.count'='1');
